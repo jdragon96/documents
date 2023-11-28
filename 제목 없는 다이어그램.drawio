@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T02:11:29.701Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="4EOXuvjctxZFXZwkFHH2" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T02:32:35.785Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="G0vIyiWBSdjjcWFWG43k" version="22.1.4" type="github">
   <diagram name="WebRTC" id="DejcVski65Hzrb7V9-FY">
     <mxGraphModel dx="1393" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,8 +13,17 @@
         <mxCell id="O3FIID095g_FBwwzk6d4-5" value="ICE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
           <mxGeometry x="-820" y="230" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="O3FIID095g_FBwwzk6d4-9" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;[pros]&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Private IP을 Public IP와 1대1 대응시켜 변환해주는 장치&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- 즉, 사설 네트워크 PC들이 하나의 공인 IP 주소를 사용해 인터넷 접속을 하기 위함&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;[con]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- WebRTC에서는 Public IP를 알아야 하지만, 계속 변경된다는 문제가 있음&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="O3FIID095g_FBwwzk6d4-9" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;[개념]&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Private IP을 Public IP와 1대1 대응시켜 변환해주는 장치&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- 즉, 사설 네트워크 PC들이 하나의 공인 IP 주소를 사용해 인터넷 접속을 하기 위함&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;[문제]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- WebRTC에서는 Public IP를 알아야 하지만, 계속 변경된다는 문제가 있음&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-810" y="115" width="460" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="O3FIID095g_FBwwzk6d4-10" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;[개념]&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Interactive Connectivity Establishment의 약자&lt;/div&gt;- 두 단말이 서로 통신할 수 있는 최적의 경로를 탐색&lt;div style=&quot;&quot;&gt;- NAT 통신을 위해 필요한 모든 포트를 열고, P2P 연결이 가능한 IP, Port에 대한 정보를 수집&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- STUN과 TURN 서버를 사용해야 한다.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="275" width="510" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O3FIID095g_FBwwzk6d4-15" value="STUN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="-820" y="380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="O3FIID095g_FBwwzk6d4-16" value="TURN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="-820" y="570" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
